@@ -1,0 +1,19 @@
+{
+  "enable": {
+    "description": "启用插件专用代理",
+    "type": "bool",
+    "default": true
+  },
+  "proxy": {
+    "description": "插件下载代理地址",
+    "type": "string",
+    "default": "http://127.0.0.1:7890",
+    "hint": "只影响插件市场和插件下载安装。启用时直接连接 GitHub，不再经过 GitHub 加速镜像。"
+  },
+  "proxy_dependencies": {
+    "description": "安装 Python 依赖也使用代理",
+    "type": "bool",
+    "default": true,
+    "hint": "为 pip 安装添加独立代理参数；已有的 pip --proxy 参数优先。"
+  }
+}
